@@ -1,0 +1,26 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning Node.js HTTP</title>
+</head>
+<body>
+    <h1>Node JS Server</h1>
+    
+    <button onclick="testApi()">Test API Call</button>
+    <div id="result"></div>
+    
+    <script>
+        async function testApi() {
+            const response = await fetch('/api/payment', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ amount: 1000, item: 'Test' })
+            });
+            const data = await response.json();
+            document.getElementById('result').textContent = 
+                `Response: ${JSON.stringify(data)}`;
+        }
+    </script>
+</body>
+</html>

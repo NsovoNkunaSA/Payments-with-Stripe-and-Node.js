@@ -1,0 +1,29 @@
+{
+  "name": "payments-with-stripe-and-node",
+  "version": "1.0.0",
+  "description": "A complete e-commerce shopping cart solution with Stripe payment processing integration.\r This project provides a fully functional shopping cart that allows customers to browse products, add items to cart, and securely checkout using Stripe.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NsovoNkunaSA/Payments-with-Stripe-and-Node.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NsovoNkunaSA/Payments-with-Stripe-and-Node.js/issues"
+  },
+  "homepage": "https://github.com/NsovoNkunaSA/Payments-with-Stripe-and-Node.js#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "stripe": "^20.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
